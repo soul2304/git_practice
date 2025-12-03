@@ -1,0 +1,266 @@
+<script>
+	/* local and global sccope variables	
+	
+	let a ="hello";
+	document.write(a + "<br>");
+	if (a == "hello"){
+	let y ="world";
+	document.write(a+" "+y+"<br>");
+	}
+	document.write(a + "<br>") // is a global scope
+	//document.write(y + "<br>") //its a local scope*/
+
+	/* type casting 
+
+	let number="123";//its a string
+	document.write(typeof(number)+"<br>");
+	number=parseInt(number);
+	document.write(typeof(number)+"<br>");//turns into integer or string
+	
+	let a="100";
+	let b="200";
+	let c="a+b";
+	document.write(c+"<br>");
+	document.write(parseInt(a)+parseInt(b)+"<br>")
+	document.write(parseInt(c))//didnt get the solution */
+
+	/*alert
+
+	//let name="soul";
+	//alert(name);
+	//alert("my name is "+name);
+	//let person = prompt("enter a name");
+	//alert("name is"+" "+person)
+	let age = parseInt(prompt("age"));
+	alert ("your age is "+ age)*/
+
+	//Problem
+	/*Find area & perimeter of a rectangle by taking the l & b from the
+	users
+
+	let length = parseInt(prompt("Enter Length In cm"));
+	let breadth = parseInt(prompt("Enter Breadth In cm"));
+	let area = length*breadth;
+	let perimeter = 2*(length+breadth);
+	document.write("area ="+ area+" "+"sq cm<br>");
+	document.write("perimeter="+perimeter+" "+"cm");*/
+
+//Operators 
+	//Assignment Operators
+	/*let y = 10;
+	y += 5;
+	document.write(y);*/
+	
+	//logical operators
+
+	/*let x=10;
+	let y=20;
+	document.write((x==y)+"<br>");
+	document.write((x===y&&y>100)+"<br>");
+	document.write((x==y||y>100)+"<br>");
+	document.write((!(x==50))+"<br>");*/
+	
+
+
+	//Arrays
+	
+	/*(let number=[10,20,30];
+	document.write(number);*/
+
+	/*let people=[
+			["Anu","Gopi","Binu"],
+			["Seethal","Balan","Soul"]
+		   ];
+	document.write((people[1][0])+"<br>");
+	document.write((people[1])+"<br>");
+	document.write((people[0][2])+"<br>");*/	
+
+	/*let people=[
+		["Anil","21",["singing","drawing","sleep"]],
+		["Sami","22",["cricket","football","Badminton"]]
+		];
+	document.write(people[0][1] +"<br>");
+	document.write(people[0][2][2]);*/
+	
+	/*let person={"name":"soul","age":24,"salary":5000};
+	document.write(person["age"]);*/
+	
+	/*let person={
+		    "row1":{"name":"soul","age":24},
+		    "row2":{"name":"Sasi","age":54}
+	};
+	document.write(person["row1"]["age"])*/
+
+	
+	//Array handling- inbuilt
+
+	/*let books =["book1","book2","book3"];
+	document.write(books[1]+"<br>");
+	books.push("book4");//add item
+	document.write(books+"<br>")
+	books.pop();//remove last
+	document.write(books+"<br>")*/
+
+	//question : ask user to enter 3 numbers and intialize it to an array
+		/*let x=parseInt(prompt("enter first number"));
+		let y=parseInt(prompt("enter second number"));
+		let z=parseInt(prompt("enter third number"));
+		
+		let number =[x,y,z];
+		document.write(number);*/
+	//question : input an age and check whether the person is adult or not
+	/*let age=parseInt(prompt("enter your age"));
+	if(age>=18){
+		document.write("you are adult");
+	}else{
+		document.write("you are not adult");
+	}*/
+
+	//question : input length and breadth of a rectangle . Find its area and if its are is greater than 200sq m 
+
+	/*let length = parseFloat(prompt("length"));
+	let breadth = parseFloat(prompt("breadth"));
+	let area = length*breadth
+	document.write(area+"sq m<br>");
+	if(area>200){
+		document.write("big rectangle")
+	}else{
+		document.write("small rectangle")
+	}*/
+
+	//question: input a question and check whether it is odd or even
+
+	/*let number = Number(prompt("enter a number"));
+	if (number%2==0){
+		document.write("the number is even")
+	}else{
+		document.write("the number is odd")
+	}*/
+
+	
+	//if .... else if .... else
+	
+	//qestion : Input a number a check whether it is positive negative or zero
+	/*let number = parseInt(prompt("enter the number"));
+	if (number > 0){
+		document.write("number is positive");
+	}else if (number < 0){
+		document.write("number is negative");
+	}else{
+		document.write("number is zero")
+	}*/
+
+
+	/*let first_number = parseInt(prompt("enter the number"));
+	let second_number = parseInt(prompt("enter the number"));
+	if(first_number==second_number && first_number > second_number){
+	document.write("the number is great")	
+	}else{
+	document.write("the number is dump")
+	}*/
+	
+	
+	/*let first_number = parseInt(prompt("enter the number"));
+	let second_number = parseInt(prompt("enter the number"));
+	if(first_number==second_number || first_number > second_number){
+	document.write("the number is great")	
+	}else{
+	document.write("the number is dump")
+	}*/
+
+	
+	/*let first_number = parseInt(prompt("enter the number"));
+	let second_number = parseInt(prompt("enter the number"));
+	let third_number = parseInt(prompt("enter the number"));
+	if((first_number==second_number && first_number > second_number)||second_number==third_number){
+	document.write("the number is great")	
+	}else{
+	document.write("the number is dump")
+	}*/
+
+
+	//switch
+
+	/*let day = parseInt(prompt("enter the day"));
+	switch (day){
+		case 1 :
+			document.write("Monday");
+		break;
+		case 2 :
+			document.write("Tuesday");
+		break;
+		case 3 :
+			document.write("Wednesday");
+		break;
+		case 4 :
+			document.write("Thursday");
+		break;
+		case 5 :
+			document.write("Friday");
+		break;
+		default :
+			document.write("Not a selected day");
+	}*/
+
+
+//loop
+
+	/*for (i=1;i<=10;i++){
+	document.write("Hello  <br>");
+	}*/
+	
+	/*for (i=10;i<=50;i++){
+		if(i%3==0){document.write(i+"<br>")
+		}
+	}*/
+	
+	/*let n = parseInt(prompt("Enter the number"))
+	for (i=1;i<=10;i++){
+		document.write(i+"*"+n+"="+i*n+"<br>")
+	}*/
+
+	
+	/*for (i=1;i<=5;i++){
+		document.write(i*i+"<br>")
+	}*/
+
+	
+	/*let a = prompt ("Enter the name");
+	let x = a.length;
+	for (i=0;i<x;i++){
+		document.write(a[i]+"<br>")// showing undefined
+	}*/
+
+	/*let sum = 0 ;
+	for (i=1;i<=50;i++){
+	sum=sum+i}
+	document.write("sum= "+sum)*/
+	
+
+	/*let odd =0;
+	let even =0;
+	for(i=1;i<=10;i++){
+		if(i%2==0){
+			even=even+i
+		}else{
+			odd=odd+i
+		}
+
+	}
+		document.write("Sum of even numbers is "+even+"<br>");
+		document.write("sum of odd numbers is "+odd);*/
+
+	
+
+	/*for (i=1;i<=10;i++){
+		if(i==3||i==5){
+			//break;
+			//continue;
+			//exit;
+		}else{
+			document.write(i+" , ")
+		}
+		
+	}
+		document.write("im a full stack developer")*/
+</script>

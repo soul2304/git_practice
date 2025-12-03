@@ -1,0 +1,204 @@
+<script>
+
+/*class Student{
+	constructor(n,r,m1,m2,m3,m4){
+	this.name=n
+	this.rollno=r
+	this.mark1=m1
+	this.mark2=m2
+	this.mark3=m3
+	this.mark4=m4
+	}
+
+}
+
+class Marks extends Student{
+	constructor(a,b,c,d,e,f){
+	super(a,b,c,d,e,f)
+	}
+	
+	calculate_total(){
+	
+		let total = this.mark1+this.mark2+this.mark3+this.mark4
+		document.write(this.name +" have aquired total mark of "+ total)
+	}
+	
+	calculate_grade(){
+		
+		let r = this.mark1+this.mark2+this.mark3+this.mark4
+		let p = (r/400)*100
+		if(p>=90&&p<=100){
+			document.write("you have aquired A grade")
+
+		}else if(p>=80&&p<=89){
+			document.write("you have aquired B grade")
+
+		}else if(p>=70&&p<=79){
+			document.write("you have aquired c grade")
+
+		}else{
+			document.write("you are failed")
+
+		}
+	}
+}
+
+let name = prompt("enter you name");
+let rollno = prompt("enter you rollno");
+let mark1 = Number(prompt("enter you First Mark"));
+let mark2 = Number(prompt("enter you Second Mark"));
+let mark3 = Number(prompt("enter you Third Mark"));
+let mark4 = Number(prompt("enter you Fourth Mark"));
+
+let mark_obj=new Marks(name,rollno,mark1,mark2,mark3,mark4)
+
+let choice = Number(prompt("Enter your choice  1 = total mark  &  2 = Grade"));
+
+	if(choice==1){
+		mark_obj.calculate_total()
+	}else if(choice==2){
+		mark_obj.calculate_grade()
+	}else{
+		alert("enter correct choice")
+	}*/
+
+// calculator
+
+
+/*class Calculator{
+	constructor(a,b){
+		this.firstNumber=a
+		this.secondNumber=b
+	}
+}
+
+class Operations extends Calculator{
+	constructor(x,y){
+	super(x,y)
+	}
+	
+	
+
+	op(c){
+		
+		switch(c){
+             case 1:
+             alert(this.firstNumber+" + "+this.secondNumber+" = "+(this.firstNumber+this.secondNumber));
+	   
+             break;
+             case 2:
+             alert(this.firstNumber+" - "+this.secondNumber+" = "+(this.firstNumber-this.secondNumber));
+	     
+             break;
+             case 3:
+             alert(this.firstNumber+" x "+this.secondNumber+" = "+(this.firstNumber*this.secondNumber));
+	     
+             break;
+             case 4:
+             alert(this.firstNumber+" / "+this.secondNumber+" = "+(this.firstNumber/this.secondNumber));
+	     
+         	 break;
+	    
+		
+          
+             }
+		
+	
+	}
+}
+while(true){
+let x = Number(prompt("enter your choice: \n1.Add\n2.Substtract\n3.Multiplication\n4.division\n5.Exit"))
+if (x == 5){
+	alert("exited");
+	break;
+}else if (x>5){
+	alert("you have entered wrong choice")
+	break;
+}
+let i = Number(prompt("enter your first number"))
+let j = Number(prompt("enter your second number"))
+let obj=new Operations(i,j)
+obj.op(x)
+}*/
+
+	/*class Book{
+		constructor(t,a,i,c){
+			this.title=t
+			this.author=a
+			this.isbn=i
+			this.copies=c
+		}
+		getDetails(){
+			document.write("Title = "+this.title+"<br>"+"Auothor = "+this.author+"<br>"+"ISBN code = "+this.isbn+"<br>"+"Total number of copies = "+this.copies)
+		}
+	
+	}
+
+	class e_Book extends Book{
+		constructor(t,a,i,c,q){
+			
+			super(t,a,i,c)
+			this.fileSize=q
+		}
+		getDetails(){
+			document.write("Title = "+this.title+"<br>"+"Author = "+this.author+"<br>"+"ISBN code = "+this.isbn+"<br>"+"Total number of copies = "+this.copies+"<br>"+"File Size = "+this.fileSize + "mb")
+		}	
+	}
+
+	let title = prompt("Enter name of the book");
+	let author = prompt("Enter name of the author");
+	let isb = prompt("Enter the ISBN code");
+	let copy = prompt("Enter the available copies ");
+	let filesize = Number(prompt("Enter the File Size"));
+
+
+	let book_obj=new e_Book(title,author,isb,copy,filesize)
+	book_obj.getDetails()*/
+
+
+	
+
+class Library {
+    constructor() {
+        this.book = [];
+    }
+
+    addBook(isbn, title) {
+        this.book.push({ isbn, title });
+        alert("Book added successfully");
+    }
+
+    removeBook(isbn) {
+        this.book = this.book.filter(b => b.isbn !== isbn);
+        alert("Book removed successfully");
+    }
+
+    findBook(title) {
+        let result = this.book.filter(b => b.title === title);
+
+        if (result.length > 0) {
+            document.write("Book Found: " + result[0].title + "<br>");
+        } else {
+            document.write("Book not found<br>");
+        }
+    }
+
+    displaybook() {
+        if (this.book.length === 0) {
+            document.write("No books in library<br>");
+        } else {
+            this.book.forEach(b => {
+                document.write("ISBN: " + b.isbn + " | Title: " + b.title + "<br>");
+            });
+        }
+    }
+}
+
+let lib = new Library();
+
+let isbn = prompt("Enter ISBN:");
+let title = prompt("Enter Book Title:");
+lib.addBook(isbn, title);
+
+lib.displaybook();
+</script>

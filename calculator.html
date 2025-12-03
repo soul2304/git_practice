@@ -1,0 +1,82 @@
+<script>
+/*function calculator(num1,num2){
+let symbol= prompt("enter a symbol")
+switch(symbol){
+case "+":
+document.write(num1+num2)
+break;
+case "-":
+document.write(num1-num2)
+break;
+case "*":
+document.write(num1*num2)
+break;
+case "/":
+document.write(num1/num2)
+break;
+default:
+document.write("invalid")
+}
+}
+let x=Number(prompt("enter a num"))
+let y=Number(prompt("enter a num"))
+
+calculator(x,y)*/
+
+/*function name(name){
+if (name==""){
+	alert("invalid name");
+}else{
+	alert("valid name");
+}
+}
+let x=prompt("enter a name");
+name(x)*/
+
+
+
+ 
+function calculator( ){
+
+let a;
+let his;
+
+while(true){
+	   
+	a = parseInt(prompt("enter your choice"))
+    if(a==5){
+    break;
+    }
+    b = parseInt(prompt("enter your first number"))
+    c = parseInt(prompt("enter your second number"))
+	let s;
+ 
+switch(a){
+             case 1:
+             alert(b+c);
+	     his=b+"+"+c+"="+ (b+c)+"<br>"
+             break;
+             case 2:
+             alert(b-c);
+	     his=b+"-"+c+"="+ (b-c)+"<br>"
+             break;
+             case 3:
+             alert(b*c);
+	     his=b+"*"+c+"="+ b*c+"<br>"
+             break;
+             case 4:
+             alert(b/c);
+	     his=b+"/"+ c +"="+ b/c+"<br>"
+         	 break;
+             default:
+             alert("Entered Invalid choice. Please enter valid choice ")
+             continue;
+             } 
+             document.write(his + "<br>")     
+}               
+}             
+calculator( )
+
+
+
+</script>

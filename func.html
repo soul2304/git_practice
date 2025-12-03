@@ -1,0 +1,54 @@
+<script>
+
+/*class Rectangle{
+
+	constructor(a,b){
+	this.length=a;
+	this.breadth=b;
+	}
+   findArea(){
+	let area = this.length*this.breadth
+	document.write("area of the rectangle is " +area + " cm<br>")
+   }
+   findPerimeter(){
+	let perimeter = 2*(this.length+this.breadth)
+	document.write("primeter of the rectangle is " +perimeter + " cm")
+   }
+
+}
+	let x=parseFloat(prompt("enter the length"))
+	let y=parseFloat(prompt("enter the breadth"))
+	let rectangle_obj=new Rectangle(x,y)
+	rectangle_obj.findArea()
+	rectangle_obj.findPerimeter()*/
+
+
+
+class Authentication{
+	constructor(a,b){
+
+	this.username=a;
+	this.password=b;
+	}
+   check_login(){
+	let username=this.username
+	let password=this.password
+		if(this.username=="Admin" && this.password=="1234"){
+			document.write("Valid User")
+		}else if(this.username!="Admin" && this.password=="1234"){
+			document.write("Enter correct Username")
+		}else if(this.username=="Admin" && this.password!="1234"){
+			document.write("Enter correct password")
+		}else{
+			document.write("Invalid User")
+
+		}
+   }
+}
+
+	let x=prompt("enter the username")
+	let y=prompt("enter the password")
+	let login_obj=new Authentication(x,y)
+	login_obj.check_login()
+
+</script>

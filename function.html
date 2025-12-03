@@ -1,0 +1,135 @@
+<script>
+
+	/*function side(a,b,c){
+		if(a==b && b==c){
+			return"Equilateral";
+		}else if((a==b&& b!=c)||(b==c&& c!=b) ||(a==c && a!=b)){
+			return"Isoceles";
+		}else {
+			return"scalene";
+		}
+	}
+	let x = parseInt(prompt("enter a side"));
+	let y = parseInt(prompt("enter a side"));
+	let z = parseInt(prompt("enter a side"));
+	let result=side(x,y,z)
+	document.write("the triangle is "+ result)*/
+
+
+		/*function pal(a){
+		let reverse = 0 ;
+		let temp= a ;
+		while(a>0){
+			let digit = a%10;
+			reverse = (reverse*10)+digit; 
+			a = parseInt(a/10)
+		}
+		return reverse
+		}
+		let a = parseInt(prompt("Enter a multidigit number"))
+		let rev =pal(a)
+		if (rev==a){
+		document.write("number is palindrome")
+		}else{
+		document.write("number is not a palindrome")		
+		}*/
+
+
+	/*function login(username,password){
+		if(username=="admin" && password == "1234"){
+		return "valid user"
+		}else if(username=="admin" && password != "1234"){
+		return "enter valid password"
+		}else if(username != "admin" && password == "1234"){
+		return "enter valid username"
+		}else{
+		return"invalid user"
+		}
+		return login;
+	}	
+		let a = prompt("enter your username")
+		let b = prompt("enter your password")
+		document.write(login(a,b))*/
+
+
+
+	/*function choice(n,a,b){
+		if(n ==1){
+		return a+b;
+		}else if (n == 2){
+		return a*b;
+		}else{
+		return "Enter a valid choice";
+		}
+	return choice
+	}
+	let x = parseInt(prompt("enter a choice 1 or 2"))
+	let y = parseInt(prompt("enter a number"))
+	let z = parseInt(prompt("enter a number"))
+	document.write(choice(x,y,z))*/
+
+
+	/*function strong(a){
+
+	let sum = 0;
+	let temp= a ;
+	while(a>0){
+		f=1;
+		let digit = a%10;
+		for(i=1;i<=digit;i++){
+		f *= i;
+		} 
+		sum += f
+		a = parseInt(a/10)
+		}
+		return sum
+	}
+		let z = parseInt(prompt("enter a number"))
+		if (strong(z) == z) {
+    		document.write(z + " is a Strong number");
+		} else {
+ 	 	document.write(z + " is not a Strong number");
+		}*/
+
+
+	//Constructors
+
+	/*s Person{
+		constructor(a,b){
+			this.name=a;
+			this.age=b;
+		}
+		display(){
+			document.write("name :"+ this.name+"<br>","age :"+this.age)
+		}
+	}
+	let x = prompt("Enter your name");
+	let y = prompt("Enter your age");
+
+	let obj = new Person(x,y);
+	obj.display()*/
+
+
+	class Circle{
+	constructor(a){
+		this.radius=a;
+	}
+	findArea(){
+		let area = 3.14*this.radius*this.radius;
+		document.write("area is "+ area + "<br>");
+	}
+	findCircumferance(){
+		let circumferance = 2*3.14*this.radius	;	
+		document.write("circumferance is "+ circumferance );
+	}
+	}
+	let x = Number(prompt("enter a radius"))
+	let circle_obj=new Circle(x);
+	circle_obj.findArea();
+	circle_obj.findCircumferance();
+	
+
+	
+	
+
+</script>
